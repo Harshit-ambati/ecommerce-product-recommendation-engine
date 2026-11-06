@@ -1,0 +1,116 @@
+{
+  "user_id": "U0000",
+  "method": "collaborative",
+  "recommendations": [
+    {
+      "rank": 1,
+      "product_id": "P0055",
+      "name": "Essential Outdoors 056",
+      "category": "Outdoors",
+      "price": 64.37,
+      "score": 0.311884,
+      "reason": "Shoppers who engaged with Active Audio 115 also engaged with this product",
+      "source_product_id": "P0114",
+      "fallback": false
+    },
+    {
+      "rank": 2,
+      "product_id": "P0148",
+      "name": "Compact Office 149",
+      "category": "Office",
+      "price": 116.3,
+      "score": 0.293346,
+      "reason": "Shoppers who engaged with Essential Office 119 also engaged with this product",
+      "source_product_id": "P0118",
+      "fallback": false
+    },
+    {
+      "rank": 3,
+      "product_id": "P0088",
+      "name": "Compact Office 089",
+      "category": "Office",
+      "price": 26.17,
+      "score": 0.287351,
+      "reason": "Shoppers who engaged with Compact Office 035 also engaged with this product",
+      "source_product_id": "P0034",
+      "fallback": false
+    },
+    {
+      "rank": 4,
+      "product_id": "P0292",
+      "name": "Compact Office 293",
+      "category": "Office",
+      "price": 152.68,
+      "score": 0.284002,
+      "reason": "Shoppers who engaged with Active Audio 043 also engaged with this product",
+      "source_product_id": "P0042",
+      "fallback": false
+    },
+    {
+      "rank": 5,
+      "product_id": "P0060",
+      "name": "Compact Audio 061",
+      "category": "Audio",
+      "price": 149.54,
+      "score": 0.28082,
+      "reason": "Shoppers who engaged with Active Audio 115 also engaged with this product",
+      "source_product_id": "P0114",
+      "fallback": false
+    },
+    {
+      "rank": 6,
+      "product_id": "P0112",
+      "name": "Active Office 113",
+      "category": "Office",
+      "price": 39.44,
+      "score": 0.27596,
+      "reason": "Shoppers who engaged with Essential Office 119 also engaged with this product",
+      "source_product_id": "P0118",
+      "fallback": false
+    },
+    {
+      "rank": 7,
+      "product_id": "P0113",
+      "name": "Studio Travel 114",
+      "category": "Travel",
+      "price": 42.49,
+      "score": 0.270821,
+      "reason": "Shoppers who engaged with Active Audio 115 also engaged with this product",
+      "source_product_id": "P0114",
+      "fallback": false
+    },
+    {
+      "rank": 8,
+      "product_id": "P0142",
+      "name": "Studio Office 143",
+      "category": "Office",
+      "price": 203.82,
+      "score": 0.267558,
+      "reason": "Shoppers who engaged with Essential Office 119 also engaged with this product",
+      "source_product_id": "P0118",
+      "fallback": false
+    },
+    {
+      "rank": 9,
+      "product_id": "P0004",
+      "name": "Studio Office 005",
+      "category": "Office",
+      "price": 149.86,
+      "score": 0.267332,
+      "reason": "Shoppers who engaged with Essential Office 119 also engaged with this product",
+      "source_product_id": "P0118",
+      "fallback": false
+    },
+    {
+      "rank": 10,
+      "product_id": "P0176",
+      "name": "Active Kitchen 177",
+      "category": "Kitchen",
+      "price": 122.64,
+      "score": 0.262391,
+      "reason": "Shoppers who engaged with Active Audio 115 also engaged with this product",
+      "source_product_id": "P0114",
+      "fallback": false
+    }
+  ]
+}

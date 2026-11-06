@@ -1,0 +1,28 @@
+{
+  "products": 360,
+  "users": 300,
+  "events": 20982,
+  "event_types": {
+    "view": 13260,
+    "cart": 4255,
+    "purchase": 3467
+  },
+  "missing_cells": 0,
+  "duplicate_event_ids": 0,
+  "interaction_density": 0.14002777777777778,
+  "price_summary": {
+    "count": 360.0,
+    "mean": 120.60780555555554,
+    "std": 59.94838424613737,
+    "min": 15.92,
+    "25%": 72.005,
+    "50%": 123.1,
+    "75%": 173.3625,
+    "max": 219.82
+  },
+  "split_rows": {
+    "train": 13284,
+    "validation": 3526,
+    "test": 4172
+  }
+}
