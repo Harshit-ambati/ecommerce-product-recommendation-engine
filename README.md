@@ -30,7 +30,7 @@ python -m recommender.predict --user U0000 --k 10
 python -m streamlit run app.py
 ```
 
-Open the URL printed by Streamlit. If PowerShell activation is disabled, replace `python` with `.venv\Scripts\python.exe`. On macOS/Linux activate with `source .venv/bin/activate`. Direct dependencies are pinned; transitive dependencies are not fully locked.
+Open the URL printed by Streamlit. On a fresh deployment, the app runs the seeded training pipeline once to create its model and reports before showing recommendations. The first load can take a minute; later reruns use the saved artifact. If PowerShell activation is disabled, replace `python` with `.venv\Scripts\python.exe`. On macOS/Linux activate with `source .venv/bin/activate`. Direct dependencies are pinned; transitive dependencies are not fully locked.
 
 The pipeline generates data in `data/raw`, chronological splits in `data/processed`, a model in `artifacts/recommender.pkl`, and evidence in `reports`. Data and artifacts are ignored by Git and regenerated from seed 42. Load only trusted, locally generated pickle artifacts. Use `--seed 42` explicitly to reproduce the reported experiment.
 

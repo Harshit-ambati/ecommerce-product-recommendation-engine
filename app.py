@@ -3,25 +3,20 @@ import json
 from pathlib import Path
 import pandas as pd
 import streamlit as st
-from recommender.model import Recommender, METHODS
+from recommender.model import METHODS
+from recommender.runtime import ensure_model
 
 ROOT = Path(__file__).resolve().parent
 st.set_page_config(page_title='Product Discovery Lab', page_icon='🛍️', layout='wide')
 st.title('Product Discovery Lab')
 st.caption('E-commerce recommendation engine · AI & Machine Learning assessment')
 st.info('Synthetic shoppers and products. This demo measures an offline simulation; scores are ranking signals, not purchase probabilities.')
-artifact = ROOT / 'artifacts' / 'recommender.pkl'
-if not artifact.exists():
-    st.warning('Train the model first: python -m recommender.pipeline')
-    st.stop()
+@st.cache_resource(show_spinner='Preparing the recommendation model and evaluation data…')
+def load_model(root):
+    return ensure_model(root)
 
 
-@st.cache_resource
-def load_model(path, modified):
-    return Recommender.load(path)
-
-
-model = load_model(str(artifact), artifact.stat().st_mtime_ns)
+model = load_model(str(ROOT))
 with st.sidebar:
     st.header('Explore recommendations')
     shopper = st.selectbox('Shopper', ['New shopper'] + model.users)
